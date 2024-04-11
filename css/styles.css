@@ -27,7 +27,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    color: #ffffff;
+    color: gray;
 }
 
 body {
@@ -122,4 +122,8 @@ body {
 
 #countdown:hover {
     background-color: rgba(123, 175, 212, 0.9);
+}
+
+html {
+    scroll-behavior: smooth;
 }
