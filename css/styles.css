@@ -138,14 +138,15 @@ article {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(123, 175, 212, 0.9)
+    margin-bottom: 40px
 }
-.footer {
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
   }
-  .footer a img {
+footer a img {
     width: 40px; /* Adjust the size as needed */
     height: 40px; /* Adjust the size as needed */
     margin: 10px; /* Adjust spacing between images */
