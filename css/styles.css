@@ -137,4 +137,5 @@ article {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+    background-color: rgba(123, 175, 212, 0.9)
+}
