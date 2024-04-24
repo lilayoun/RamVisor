@@ -1,79 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>RamVisor</title>
-        <style>
-            body {
-                background-image: url('./assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>RamVisor</title>
+    <style>
+      body {
+        background-image: url("./assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#howto">How To</a></li>
+      </ul>
+    </nav>
+    <div class="img-box">
+      <img
+        class="center-fit"
+        src="./assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg"
+        alt="RamVisor Image"
+      />
+      <div class="text-box">
+        <p>
+          Welcome To <br />
+          RamVisor AI: Your <br />
+          AI-Assisted <br />
+          Academic Ally
+        </p>
+      </div>
+      <div class="overlay-text">
+        <p>
+          RamVisor AI is your one-stop destination for academic advising. Our
+          chatbot is designed to assist you in planning your four-year degree,
+          scheduling courses, finding the most applicable courses for your
+          major, fulfilling general education requirements, and providing
+          tailored advice that is specific to your academic needs.
+        </p>
+        <button>Get Started</button>
+      </div>
+    </div>
+    <div id="countdown">
+        <p>Countdown to Course Registration:</p>
+        <script>
+          var countDownDate = new Date("July 1, 2024 00:00:00").getTime();
+          var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(
+              (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+            );
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML =
+              days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("countdown").innerHTML = "EXPIRED";
             }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#faqs">FAQs</a></li>
-                <li><a href="#howto">How To</a></li>
-            </ul>
-        </nav>
-        </nav>
-        <div class="img-box">
-            <img class="center-fit" src="./assets/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg" alt="RamVisor Image">
-            <div class="text-box">
-                <p>Welcome To <br> RamVisor AI - <br> Your Academic <br> Advisor Chatbot</p>
-            </div>
-            <div class="overlay-text">
-                <p>RamVisor AI is your one-stop destination for academic advising. Our chatbot is designed to assist you in planning your four-year degree, scheduling courses, finding the most applicable courses for your major, fulfilling general education requirements, and providing tailored advice that is specific to your academic needs.</p>
-                <button>Get Started</button>
-            </div>
-            <div class="model-img"></div>
-        </div>
-        <div id="countdown">
-            <script>
-            var countDownDate = new Date("July 1, 2024 00:00:00").getTime();
-            var x = setInterval(function() {
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-        </script></div>
+          }, 1000);
+        </script>
+    </div>
+    <!-- How To Section -->
+    <div id="howto" class="howto-section">
+        <!-- Content for How To -->
+        <p>
+            <strong>What courses are on your ideal schedule?</strong> 
+            <br>
+            <br>
+            Course 1 <br>
+            <input type="text">
+            <br>
+            <br>
+            Course 2 <br>
+            <input type="text">
+            <br>
+            <br>
+            Course 3 <br>
+            <input type="text">
+        </p>
+        <button>Submit</button>
+    </div>
 
-        <div id="contact">
-            <!-- Content for Contact Us -->
-        </div>
-        
-        <!-- FAQs Section -->
-        <div id="faqs">
-            <!-- Content for FAQs -->
-        </div>
-        
-        <!-- How To Section -->
-        <div id="howto">
-            <!-- Content for How To -->
-        </div>
+    <!-- FAQs Section -->
+    <div id="faqs" class="faqs-section">
+        <!-- Content for FAQs -->
+        <h1>
+            Why Choose RamVisor AI?
+        </h1>
+        <ol>
+            <li class="list-item">
+                <strong>Personalized Assistance</strong><br>
+                RamVisor AI provides personalized assistance for all your academic needs. Our chatbot is designed to understand your specific requirements at UNC and provide you with the best advice possible to help you succeed.
+            </li>
+            <li class="list-item">
+                <strong>Time-Saving</strong><br>
+                With RamVisor AI, you can save time by getting instant access to all the information you need. No more waiting in long queues or browsing through endless pages of information.
+            </li>
+            <li class="list-item">
+                <strong>24/7 Availability</strong><br>
+                RamVisor AI is available 24/7, so you can get the assistance you need anytime, anywhere.
+            </li>
+        </ol>
+    </div>
+    <div class="signup-section">
+        <p class="centered-text"></p>
+            <Strong>Get Started with RamVisor AI Today</Strong><br><br>
+            Are you ready to take control of your academic journey? Sign up for RamVisor AI today and get access to the best academic advising chatbot on the market. Our chatbot is designed to provide you with personalized assistance, save you time, and be available whenever you need it.
+        </p><br>
+        <button>Sign Up Now</button>
+    </div>
 
-    </body>
+    <div id="contact">
+      <!-- Content for Contact Us -->
+    </div>
+
     
-    <footer>
-        <div class="socials">
-            <a href="https://www.instagram.com/ramvisor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <img src="assets/insta.png" alt="Description of the image">
-            </a>
-            <a href="https://www.linkedin.com/company/ramvisor-ai/about/">
-                <img src="assets/linkedin.png" alt="Description of the image">
-            </a>
-        </div>
-   </footer>
-    </html>
+  </body>
+
+  <footer>
+    <div class="socials">
+      <a
+        href="https://www.instagram.com/ramvisor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+      >
+        <img src="assets/insta.png" alt="Description of the image" />
+      </a>
+      <a href="https://www.linkedin.com/company/ramvisor-ai/about/">
+        <img src="assets/linkedin.png" alt="Description of the image" />
+      </a>
+    </div>
+  </footer>
+</html>

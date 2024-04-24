@@ -176,3 +176,37 @@ footer a img {
     height: 40px; 
     margin: 10px;
 }
+
+.howto-section {
+    padding: 5% 15%;
+    background-color: white;
+}
+
+.howto-section strong {
+    font-size: 24px;
+}
+
+.faqs-section {
+    padding: 5% 15%;
+    background-color: rgb(215, 215, 215);
+}
+
+.signup-section {
+    padding: 5% 35%;
+    background-color: white;
+    text-align: center;
+}
+
+.signup-section strong {
+    font-size: 24px;
+}
+
+.signup-section button {
+    padding: 10px 20px;
+    background-color: #7BAFD4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
